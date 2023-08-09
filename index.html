@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My_Title</title>
+    <style>
+        body {
+            background-image: url(https://img.freepik.com/premium-photo/blue-breaking-wave-with-funnel-bubbling-clear-water_124507-22421.jpg?w=996);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .about-box {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul, ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+		h1{
+			animation: rainbow 10s linear infinite;}
+		@keyframes rainbow {
+			0% {
+				color: red;
+			}
+			25% {
+				color: orange;
+			}
+			50% {
+				color: yellow;
+			}
+			75% {
+				color: green;
+			}
+			100% {
+				color: blue;
+			}
+		}
+		ol {
+    		list-style-type: none;
+   			padding: 0;
+		}
+
+		ol li {
+    		margin-bottom: 5px;
+    		color: #FFA500; /* Change this to your desired color */
+    		font-weight: bold; /* Add this line to make the text bold */
+	}
+
+		ol li:nth-child(1) {
+   	 		color: black;
+			font-weight: bold:
+		}
+
+		ol li:nth-child(2) {
+    		color: red;
+			font-weight: bold:
+		}
+
+		ol li:nth-child(3) {
+    		color: gold;
+			font-weight: bold:
+		}
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Carlos_Denegri's page</h1>
+    <div class="about-box">
+        <p>About me. My name is Carlos and I come from Mexico. I went to University in the States. Texas and Hawaii to be specific. I am now a new student in the world of coding, trying to write this website as a project. My number one hobby is to surf. Something I cannot do living in Berlin.</p>
+    </div>
+    <p>My favorite websites are:</p>
+    <ul>
+        <li><a href="https://www.youtube.com/">Youtube</a></li>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="www.surfertoday.com">Surfer Today</a></li>
+    </ul>
+    <p>My favorite destinations are:</p>
+    <ol>
+        <li>Hawaii</li>
+        <li>Taiwan</li>
+        <li>Thailand</li>
+    </ol>
+    <h2>Contact Me!</h2>
+
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
